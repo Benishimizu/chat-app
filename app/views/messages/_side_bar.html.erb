@@ -1,6 +1,8 @@
 <div class="side-bar-header">
   <div class="header-name">
-    <a href="#">Tom</a>
+     <%= link_to current_user.name, edit_user_path(current_user) %>
+    <%# <a href="#">Tom</a> %>
+    <%# https://master.tech-camp.in/v2/curriculums/4845 %>
   </div>
   <div class="create-room">
     <a href="#">チャットを作成する</a>
