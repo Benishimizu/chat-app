@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def update
     # current_user.update(user_params)
-
+      # https://master.tech-camp.in/v2/curriculums/4843     
     if current_user.update(user_params)
       redirect_to root_path
     else
