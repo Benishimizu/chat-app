@@ -21,10 +21,12 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name, user_ids: [])
   end
 
-
+  def index
+  end
 
 
 end
 
 # https://master.tech-camp.in/v2/curriculums/4849
 # https://master.tech-camp.in/v2/curriculums/4711
+# https://master.tech-camp.in/v2/curriculums/4856
