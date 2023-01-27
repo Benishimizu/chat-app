@@ -5,13 +5,14 @@
     <%# https://master.tech-camp.in/v2/curriculums/4845 %>
   </div>
   <div class="create-room">
-    <a href="#">チャットを作成する</a>
+    <%= link_to "チャットを作成する", new_room_path %>
+    <%# <a href="#">チャットを作成する</a> %>
   </div>
 
 </div>
 
 <div class="rooms">
-  <div class="room">
+  <%# <div class="room">
     <div class="room-name">
       <a href="#">techroom1</a>
     </div>
@@ -20,7 +21,23 @@
     <div class="room-name">
       <a href="#">techroom2</a>
     </div>
-  </div>
+  </div> %>
 
+  <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+        <a href="#"><%= room.name %></a>
+      </div>
+    </div>
+  <% end %>
 
 </div>
+
+<%# https://master.tech-camp.in/v2/curriculums/4853 
+https://master.tech-camp.in/v2/curriculums/4854
+
+
+
+
+
+%>
