@@ -7,4 +7,10 @@ class User < ApplicationRecord
 
          validates :name, presence: true
         #  https://master.tech-camp.in/v2/curriculums/4847
+
+
+
+        has_many :room_users
+        has_many :rooms, through: :room_users
+        # https://master.tech-camp.in/v2/curriculums/4852
 end
