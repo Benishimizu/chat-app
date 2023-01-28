@@ -9,8 +9,9 @@ class User < ApplicationRecord
         #  https://master.tech-camp.in/v2/curriculums/4847
 
 
-
         has_many :room_users
         has_many :rooms, through: :room_users
         # https://master.tech-camp.in/v2/curriculums/4852
+        has_many :messages
+        # https://master.tech-camp.in/v2/curriculums/4947
 end
