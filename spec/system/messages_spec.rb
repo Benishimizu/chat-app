@@ -113,7 +113,7 @@ RSpec.describe 'メッセージ投稿機能', type: :system do
       # 送信した画像がブラウザに表示されていることを確認する
       expect(page).to have_selector('img')
 
-      # 
+      #https://master.tech-camp.in/v2/curriculums/4879 
     end
   end
 end
